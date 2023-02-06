@@ -386,8 +386,7 @@ p:last-child {
     max-width: 450px;
   }
   .content {
-    margin-left: auto;
-    margin-right: 0;
+    margin: auto;
   }
   .tm-nav ul {
     display: flex;
@@ -395,7 +394,12 @@ p:last-child {
     justify-content: flex-end;
   }
   .grid {
-    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tm-site-header {
+    text-align: center;
   }
   .tm-col-email {
     padding-left: 15px;
