@@ -319,6 +319,11 @@ p {
   border-bottom: 1px solid black;
 }
 
+.material-symbols-outlined {
+  font-size: 70px !important;
+  margin-bottom: 19px;
+}
+
 /* Footer */
 footer {
   position: absolute;
