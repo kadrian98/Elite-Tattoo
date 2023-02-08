@@ -32,29 +32,6 @@ https://www.tooplate.com/view/2097-pop
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-
-    <script>
-      document.documentElement.className = "js";
-      var supportsCssVars = function () {
-        var e,
-          t = document.createElement("style");
-        return (
-          (t.innerHTML = "root: { --tmp-var: bold; }"),
-          document.head.appendChild(t),
-          (e = !!(
-            window.CSS &&
-            window.CSS.supports &&
-            window.CSS.supports("font-weight", "var(--tmp-var)")
-          )),
-          t.parentNode.removeChild(t),
-          e
-        );
-      };
-      supportsCssVars() ||
-        alert(
-          "Please view this in a modern browser such as latest version of Chrome or Microsoft Edge."
-        );
-    </script>
   </head>
 
   <body>
@@ -370,31 +347,5 @@ https://www.tooplate.com/view/2097-pop
     <script src="js/anime.min.js"></script>
     <!-- http://animejs.com/ -->
     <script src="js/main.js"></script>
-    <script>
-      function setupFooter() {
-        var pageHeight =
-          $(".tm-site-header-container").height() + $("footer").height() + 100;
-
-        var main = $(".tm-main-content");
-
-        if ($(window).height() < pageHeight) {
-          main.addClass("tm-footer-relative");
-        } else {
-          main.removeClass("tm-footer-relative");
-        }
-      }
-
-      /* DOM is ready
-        ------------------------------------------------*/
-      $(function () {
-        setupFooter();
-
-        $(window).resize(function () {
-          setupFooter();
-        });
-
-        $(".tm-current-year").text(new Date().getFullYear()); // Update year in copyright
-      });
-    </script>
   </body>
 </html>
